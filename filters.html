@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get every element in the array has a value above a specific name.</p>
+<p>Name: <input type="text" id="nameCheck" value="General Veers"></p>             //create the text box
+<button onclick="myFunction()">Try it</button>                                   //calling function
+
+<p>All officers <span id="demo"></span></p>
+</body>
+<script>
+  var officers = [ { id: 20, name: 'Captain Piett' }, 
+  { id: 24, name: 'General Veers' }, 
+  { id: 56, name: 'Admiral Ozzel' }, 
+  { id: 88, name: 'Commander Jerjerrod' } ];
+  
+  function checkAdult(officers) {
+    return officers.id && officers.name == document.getElementById("nameCheck").value;  //return the officer id and name
+  }
+  
+  function myFunction() {
+    document.getElementById("demo").innerHTML = officers.filter(checkAdult); 
+  }
+  </script>
+</html>

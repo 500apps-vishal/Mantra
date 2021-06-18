@@ -1,0 +1,24 @@
+<html>
+    <body bgcolor="lightgreen">
+           <center> <h1>TimeInterval</h1>
+            <span id="demo"></span>    
+            <script>
+
+                function getTime(){
+
+                var today = new Date();     //creating object
+                var h= today.getHours();    //creating method
+                var m= today.getMinitus();
+                var s= today.getSeconds();
+
+                document.getElementById("demo").innerHTML= h + ":" + m + ":" + s;   
+
+               setInterval(getTime(),1000);    //time interval expression it can be used in no of times display the repition output
+                }
+                getTime();                     //calling function
+              
+            </script>
+            </center>
+        </body>
+    
+</html>
