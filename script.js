@@ -1,5 +1,4 @@
 'use strict';
-///////////////////////////////////////
 // Primitives vs. Objects in Practice
 // Primitive types
 let lastName = 'Williams';
