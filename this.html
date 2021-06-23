@@ -1,0 +1,16 @@
+
+
+
+const age = function(birthYear){           //normal function using this keyword
+    console.log(2021-birthYear);
+    console.log(this);
+};
+age(2000);
+
+
+
+const age = birthYear =>{              //this keyword using  arrow function
+    console.log(2021-birthYear);
+    console.log(this);
+};
+age(2010);
